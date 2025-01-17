@@ -1,15 +1,16 @@
-
-// src/components/Menu/DishCard.jsx
 import React from 'react';
 
 const DishCard = ({ dish }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img 
-        src={dish.image} 
-        alt={dish.name}
-        className="w-full h-48 object-cover"
-      />
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <div className="relative h-64 overflow-hidden">
+        <img 
+          src={dish.image} 
+          alt={dish.name}
+          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+        />
+      </div>
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-bold">{dish.name}</h3>
@@ -25,9 +26,3 @@ const DishCard = ({ dish }) => {
 };
 
 export default DishCard;
-
-
-
-/* You'll also need these files in your project root: */
-
-// package.json
