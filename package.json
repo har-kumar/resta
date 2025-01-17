@@ -11,7 +11,7 @@
     "react-router-dom": "^6.28.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "https://yourusername.github.io/resta"
+    "homepage": "https://har-kumar.github.io/resta"
   },
   "scripts": {
     "predeploy": "npm run build",
